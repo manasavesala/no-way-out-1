@@ -1,0 +1,59 @@
+.room {
+  display: none;
+}
+
+body {
+  margin-top: 10%;
+  background-color: black;
+  color: white;
+  font-family: monospace;
+  text-align: center;
+  font-size: 20px;
+  color: green;
+}
+
+pre {
+  color: green;
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 100px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+.button {
+  background-color: green; /* Green */
+  border: none;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+
+.button:hover {
+  color: white;
+}
+
+sub {
+  color: white;
+}
+
+#healthDisplay {
+  
+}
+
+
