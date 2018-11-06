@@ -62,17 +62,17 @@
         <br>
         <sub>*** Your in game choices are critical and will determine if you live or die. Choose wisely. ***</sub>
         <br>
-        <sub>Loved ones remaining who believe in you: <span id="healthDisplay"></span></sub>
+        <br>
+        <sub>Loved ones remaining who believe in you: <span class="healthDisplay"></span></sub>
       </div>
 
       <div id="room2" class="room">
         <p>I move closer to the window. For a moment, I think I see him there. But A cold emptiness stands where I thought 'he' was. The street is deserted. Wet concrete shining indifferently. A shiver goes through me as I turn from the window. It's then that I see it. Just below the sliver of space between my bedroom door and the floor a barely visible shadow standing perfectly still. Inhumanly still.</p>
-        <button class="button" id="room2toRoom3-damage">Run around in cricels yelling</button>
-        <button class="button" id="room2toRoom3">Run to the attic to hide. </button>
-        <button class="button" id="room2toRoom3">Run back to your room to hide underneath the bed.</button>
-        <button class="button" id="room2toRoom3">Scream until blue</button>
+        <p>I decide to ...</p>
+        <button class="button" id="room2toRoom3-damage">Hide under my bed.</button>
+        <button class="button" id="room2toRoom3">Yell "who's there!?" </button>
         <br>
-        <sub>Loved ones remaining who believe in you: <span id="healthDisplay"></span></sub>
+        <sub>Loved ones remaining who believe in you: <span class="healthDisplay"></span></sub>
       </div>
 
       <div id="room2-damage" class="room">
@@ -80,15 +80,45 @@
           <sub>You have lost a loved one who believed in you.</sub>
           <br>
           <button class="button" id="room2toRoom3">Proceed</button>
+          <br>
+          <sub>Loved ones remaining who believe in you: <span class="healthDisplay"></span></sub>
       </div>
 
       <div id="room3" class="room">
-          <p>Hear door broken down by an axe. You wait until the man goes into your bedroom.</p>
-          <button class="button" id="room3toRoom4-damage">Run around in cricels yelling</button>
-          <button class="button" id="room3toRoom4">Quietly Sneak Down to 1st Floor</button>
-          <button class="button" id="room3toRoom4">Run out of Attic Window</button>
-          <button class="button" id="room3toGameOver">Hide under Bed</button>
-        </div>
+          <p>I yell "who's there!?". The only return voice I hear is a barely audible chuckle. A chuckle devoid of any mirth or warmth. After a time which seems an eternity, the shadow of feet recede. There is no noise. An absolute stillness permeates the house.</p>
+          <p>"My parents!", i think in horror. Will he go for them? I slowly make my way to my parents room. A knock on the door produces no response. I decide to...</p>
+          <button class="button" id="room3toRoom4-damage">Enter their room.</button>
+          <button class="button" id="room3toRoom4">Enter my Dad's office (He's strictly forbidden me to enter). </button>
+          <br>
+          <sub>Loved ones remaining who believe in you: <span class="healthDisplay"></span></sub>
+      </div>
+
+      <div id="room4" class="room">
+        <p>I quietly make my way to my Dad's office and am suprised. The door isn't locked. I turn the handle very slowly so it makes no noise. The only sound is a slight creak from the wooden floorboards. I enter the office searching for the handgun I know is here but have been strictly forbidden from touching.</p>
+        <p>After moments of searching, I finally find my prize in the top drawer of the desk. My dad has few rules but this one is absolute. Do I take the weapon?</p>
+        <button class="button" id="room4toRoom5-damage">I will not take it.</button>
+        <button class="button" id="room4toRoom5">I will take it.</button>
+        <br>
+        <sub>Loved ones remaining who believe in you: <span class="healthDisplay"></span></sub>
+    </div>
+
+    <div id="room4-damage" class="room">
+      <p>An empty cold looking bed is the only thing I see when I enter my parents bedroom. Wouldn't they have told me if they left for the night? My fear increases with the knowledge of being commpletely alone.</p>
+      <p>My mind scrambles trying to think of where they could have possibly gone. I fear that the figure has done something horrible to them.</p>
+      <p>At this point I realize that I must find a weapon to protect myself. My dad has strictly forbidden me from grabbing his gun, but it is tne only option, unless I choose to be unarmed...</p>
+      <button class="button" id="room4toRoom5-damage">Choose to continue unarmed.</button>
+      <button class="button" id="room4toRoom5">Enter my Dad's office (He's strictly forbidden me to enter). </button>
+      <br>
+      <sub>Loved ones remaining who believe in you: <span class="healthDisplay"></span></sub>
+  </div>
+  <div id="room5-damage" class="room">
+    <p>I decide to not grab the gun out of fear of my dad's reprisal. The fear in me continues and grows. I spend what seems like an eternity sitting in the chair. I know I have let down the people who believed in me and were counting on me to find and protect them. But the worst of all, I have lost complete belief in myself. </p>
+    <button class="button" id="room4toRoom5-damage">Choose to continue unarmed.</button>
+    <button class="button" id="room4toRoom5">Enter my Dad's office (He's strictly forbidden me to enter). </button>
+    <br>
+    <sub>Loved ones remaining who believe in you: <span class="healthDisplay"></span></sub>
+  </div>
+
     </div>
   </body>
 </html>
