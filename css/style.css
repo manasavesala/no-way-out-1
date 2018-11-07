@@ -1,3 +1,4 @@
+
 .room {
   display: none;
 }
@@ -17,7 +18,7 @@ pre {
   text-align: left;
   margin-left: 25%;
   margin-right: 25%;
-  font-size: 14px;
+  font-size: 8px;
   overflow: hidden;
 }
 
@@ -63,4 +64,12 @@ sub {
 
 #healthDisplay {
 
+}
+
+#family {
+  font-size: 8px;
+}
+
+#window {
+  font-size: 20px;
 }
