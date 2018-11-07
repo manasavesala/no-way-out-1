@@ -5,22 +5,16 @@
   <script src="js/script.js"></script>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link type="text/css" rel="stylesheet" href="css/style.css"/>
-  <audio src="sounds/itscoming.mp3" id="introMusic"></audio>
-  <audio src="sounds/doorOpen.mp3" id="doorOpen"></audio>
-  <audio src="sounds/bathroomNoise.mp3" id="bathroomNoise"></audio>
-  <audio src="sounds/footsteps1.mp3" id="footSteps1"></audio>
-  <audio src="sounds/heartbeat.mp3" id="heartBeat"></audio>
-  <audio src="sounds/bellSound.mp3" id="bellSound"></audio>
-  <audio src="sounds/lidcreak.mp3" id="lidCreak"></audio>
-  <audio src="sounds/lightning.mp3" id="lightning"></audio>
-  <audio src="sounds/windownoise.mp3" id="windowNoise"></audio>
 
   <title>Horror Game</title>
   </head>
   <body>
     <div class="container">
       <div id="room0" class="room">
-
+        <iframe src="sounds/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+        <audio id="intro" autoplay>
+          <source type="audio/mpeg" src="sounds/intro.mp3">
+        </audio>
         <pre>
             *         .              *            _.---._
                           ___   .            ___.'       '.   *
@@ -109,13 +103,53 @@
         <!-- <sub>Loved ones remaining who believe in you: <span class="healthDisplay"></span></sub> -->
     </div>
 
-    
-    <div  id="officeS2" class="room">
-      <p></p>
-      <button id="officeS2btn1" class="button">hide in attic</button>
-      <button id="officeS2btn2" class="button">Stand and Fight</button>
-
+    <div id="officeS2" class="room">
+      <p>I reach for the gun and in my blind haste, a glass that was near the edge of the desk it was in falls to the floor, shattering with a resounding crash. I hear the creature  quicked his pace, I only have seconds to decide if I should...</p>
+      <button class="button" id="officeS2btn1">Quickly Hide in the Attic</button>
+      <button class="button" id="officeS2btn2">Stand and Fight</button>
+      <br>
+      <!-- <sub>Loved ones remaining who believe in you: <span class="healthDisplay"></span></sub> -->
     </div>
+
+    <div id="atticS1" class="room">
+      <p>"Screw this" you say to yourself as you take the gun and rush out of the office. You quickly head to the hallway and look up at a dandling string that opens the door to the attic. Whatever that thing is, its getting closer by the moment. You quickly open the trapdoor, climb inside and barely close the door behind you in time. You peek down into the hallway and see a shadow of whatever mock shape a man that thing is. It takes a raspy breath as it maes its way to your bedroom. You look around and see a small window in the attic. You are afraid of heights but the only other option is to sneak out the front door and risk running into that monstrous thing. You make your way to... </p>
+      <button class="button" id="atticS1btn1">The Attic Window and Try and Climb Out</button>
+      <button class="button" id="atticS1btn2">Sneak out the front door.</button>
+      <br>
+      <!-- <sub>Loved ones remaining who believe in you: <span class="healthDisplay"></span></sub> -->
+    </div>
+
+    <div id="atticS2" class="room">
+      <p>You pry the window open and as you do, the thunder roars in approval. You take a deep breath and carefully make your way onto the slick roof. The rain is pouring hard as you crawl to the edge. Unfortunately, your father never did get around to fixing those shingles your moms been nagging him about. As you plunge over the edge and into the darkness, you reflect on the poor choices that led you here.</p>
+    <p>You Died - Game Over</p>
+    <button class="button" id="atticS2btn1">Restart the journey</button>   <!-- <sub>Loved ones remaining who believe in you: <span class="healthDisplay"></span></sub> -->
+    </div>
+
+    <div id="basementS1" class="room">
+      <p>You decide youd rather take your chances with the creature and climb down into the hallway. The damn floor creaks and you hear the creature who is searching your room stop and snarl. You rush down and jump the last few steps onto the first floor. The front has been blocked off, clearly this thing wants you badly. You look around and see a door on the side of the hall. It leads to basement. With no other choice you swing it open, heaad inside and close it behind you as it reaches the first floor. It violently beats on the door trying to get inside. You head down, cursing whoever invented stairs. There is a window in the corner and a boiler with enough space to hide behind, you look at the gun you are holding and...</p>
+      <button class="button" id="basementS1btn1">Open the window and make your escape.</button>
+      <button class="button" id="basementS1btn2">Hide behind the boiler and set up and ambush.</button>
+      <br>
+      <!-- <sub>Loved ones remaining who believe in you: <span class="healthDisplay"></span></sub> -->
+    </div>
+
+    <div id="basementEnding" class="room">
+      <p>You toss the gun aside, there's no way in hell you're sticking around to find out what is stalking in your house. You hear the basement door start to crack as you reach the window. The damn thing is stuck after years of disuse. With a earthshattering crash it makes its way into the basement just as the window pops open with on final heave. You jump up and crawl outside into the rain. You turn around and see red eyes glaring at you frown the darkness. Quickly you run faster than you ever had before, you need to get far away. After several minutes of running on the road you see a car driving towards you. You scream for help and it thankfully pulls over. "Thanks" you exclaim and you throw yourself in and close the door. You hear a click as the locks activate. "You're welcome <span>Name</span>" a familiar raspy voice replies. You slowly turn around, a bloody smile spreading accross its face. It steps on the gas pedal and the last thing you hear is its cackling laugh, echoing through the Night</p>
+    <p>You Died - Game Over</p>
+    <button class="button" id="basementEndingbtn1">Restart the journey</button>  
+
+    <!-- <button>restart</button> -->   <!-- <sub>Loved ones remaining who believe in you: <span class="healthDisplay"></span></sub> -->
+    </div>
+
+    <div id="basementGameOver" class="room">
+      <p>You hear the door crash, clearly this thing has monstrous strength. With No time to Escape, you hide behind the boiler. It slowly makes its way down, with steps far heavier than what it humanoid shape should emmit. You take a chance and peak at it, darkness cloaking it. Suddenly it grabs the support beam to the stairs and you recoil back in horror as you see a grimmy and clawed hand. It sniffs the air as if trying to smell you out. You hold your breath as it makes its way to the boiler. You get you get your gun ready as is turn the corner. You take a shot and somehow miss. Fortunately the bullet rebounds and it seems to hit the thing as it shrieks in pain. You make a run for it, but it grabs your clothing and won't let go. Blindly, you take several more shots and hear a howl of pain as you free yourself. You take the stairs two at a time, and with one final look back, you see its collapsed form dissolve into a black mist. You Head out the back door and figure all the noise you made attracted attention, as red and blue lights near your home. You feel something on your back and reach for it. Stunned with horror as clawed finger wriggles in your fist, struggling to get back to its owner...perhaps its still out there...</p>
+
+    <p>Congratulations! You Find A Way Out Alive!</p>
+    <button class="button" id="basementGameOverbtn1">Restart the journey</button>  
+
+    <!-- <button>restart</button> -->   <!-- <sub>Loved ones remaining who believe in you: <span class="healthDisplay"></span></sub> -->
+    </div>
+
     <div id="officeGameOver" class="room">
       <p>I decide to not grab the gun out of fear of my dad's reprisal. The fear in me continues and grows. I spend what seems like an eternity sitting in the chair. I know I have let down the people who believed in me and were counting on me to find and protect them. But the worst of all, I have lost complete belief in myself. </p>
       <button class="button" id="officeGameOverbtn1">Choose to continue unarmed.</button>
