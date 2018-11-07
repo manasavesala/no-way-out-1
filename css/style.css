@@ -15,8 +15,17 @@ body {
 pre {
   color: green;
   text-align: left;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+#house {
+  color: green;
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 10%;
   font-size: 14px;
   overflow: hidden;
 }

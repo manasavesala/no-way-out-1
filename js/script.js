@@ -1,6 +1,43 @@
 
 var healthCounter = 3;
 
+function doorOpen() {
+  var dooropen = document.getElementById("doorOpen");
+  dooropen.play();
+}
+function bathroomNoise() {
+  var bathroomNoise = document.getElementById("bathroomNoise");
+  bathroomNoise.play();
+}
+function footSteps1() {
+  var footSteps1 = document.getElementById("footSteps1");
+  footSteps1.play();
+}
+function heartBeat() {
+  var heartBeat = document.getElementById("heartBeat");
+  heartBeat.play();
+}
+function bellSound() {
+  var bellSound = document.getElementById("bellSound");
+  bellSound.play();
+}
+function lidCreak() {
+  var lidCreak = document.getElementById("lidCreak");
+  lidCreak.play();
+}
+function lightning() {
+  var lightning = document.getElementById("lightning");
+  lightning.play();
+}
+function windowNoise() {
+  var windowNoise = document.getElementById("windowNoise");
+  windowNoise.play();
+}
+
+function laugh() {
+  var laugh = document.getElementById("laugh");
+  laugh.play();
+}
 
 $(document).ready(function () {
   $("#room0").slideDown();
@@ -45,6 +82,7 @@ $(document).ready(function () {
   $("#bedroomS2btn2").click(function() {
     $(".room").hide();
     healthCounter--;
+    laugh();
     $("#parentsroomS1").slideDown();
     $(".healthDisplay").text(healthCounter);
   });
@@ -56,6 +94,7 @@ $(document).ready(function () {
   });
 
   $("#parentsroomS1btn2").click(function() {
+    lidCreak();
     $(".room").hide();
     $("#officeS1").slideDown();
     $(".healthDisplay").text(healthCounter);
@@ -68,6 +107,7 @@ $(document).ready(function () {
   });
 
   $("#parentsroomS2btn2").click(function() {
+    lidCreak()
     $(".room").hide();
     $("#officeS1").slideDown();
     $(".healthDisplay").text(healthCounter);

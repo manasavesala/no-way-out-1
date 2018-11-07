@@ -5,6 +5,15 @@
   <script src="js/script.js"></script>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link type="text/css" rel="stylesheet" href="css/style.css"/>
+  <audio src="sounds/doorOpen.mp3" id="doorOpen"></audio>
+  <audio src="sounds/bathroomNoise.mp3" id="bathroomNoise"></audio>
+  <audio src="sounds/footsteps1.mp3" id="footSteps1"></audio>
+  <audio src="sounds/heartbeat.mp3" id="heartBeat"></audio>
+  <audio src="sounds/bellSound.mp3" id="bellSound"></audio>
+  <audio src="sounds/lidcreak.mp3" id="lidCreak"></audio>
+  <audio src="sounds/lightning.mp3" id="lightning"></audio>
+  <audio src="sounds/windownoise.mp3" id="windowNoise"></audio>
+  <audio src="sounds/laugh.mp3" id="laugh"></audio>
 
   <title>Horror Game</title>
   </head>
@@ -12,10 +21,10 @@
     <div class="container">
       <div id="room0" class="room">
         <iframe src="sounds/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
-        <audio id="intro" autoplay>
+        <audio id="intro" autoplay loop>
           <source type="audio/mpeg" src="sounds/intro.mp3">
         </audio>
-        <pre>
+        <pre id="house">
             *         .              *            _.---._
                           ___   .            ___.'       '.   *
     .              _____[LLL]______________[LLL]_____     \
@@ -44,11 +53,15 @@
       </div>
 
       <div id="gameOver" class="room">
+
           <p>You have died. Resuscitate from first breath?</p>
           <button class="button" id="gameOverToRoom0">Yes</button>
       </div>
 
       <div id="bedroomS1" class="room">
+
+    
+ 
         <p>His face looked like a man's. An older man in his 40s. Plain. Ordinary. I knew him though. I knew the creature that hid behind the mask of a man. And I knew why he was standing in the cold rain, staring in the direction of my window.</p>
         <p>I began to tremble knowing what I had to do...</p>
         <button class="button" id="bedroomS1btn1">I move closer to the window.</button>
@@ -61,6 +74,24 @@
       </div>
 
       <div id="bedroomS2" class="room">
+          <pre>
+              o=(=(=(=(=(=(=)=)=)=)=o
+              !-'-'-'-/_\-'-'-'-! 
+              ! !  , /___\`  ! !!
+              !!! , /  |  \`  ! !
+              !!  ,|___|___`  !!!
+              !_,| |_______|` `_!
+              !-`| |       | |,-!
+              !!!! |       | ! !!
+              !!!! |       | !!!!
+              !!!!_|_______|_!!!!
+              !!!!___________!!!! 
+              !!!!           !!!!   
+              !!!!           !!!!   
+              !!!!           !!!!   
+              !!!!           !!!!   
+                                    
+          </pre>
         <p>I move closer to the window. For a moment, I think I see him there. But A cold emptiness stands where I thought 'he' was. The street is deserted. Wet concrete shining indifferently. A shiver goes through me as I turn from the window. It's then that I see it. Just below the sliver of space between my bedroom door and the floor a barely visible shadow standing perfectly still. Inhumanly still.</p>
         <p>I decide to ...</p>
         <button class="button" id="bedroomS2btn2">Yell "who's there!?" </button>
@@ -78,7 +109,7 @@
       </div>
 
       <div id="parentsroomS1" class="room">
-          <p>I yell "who's there!?". The only return voice I hear is a barely audible chuckle. A chuckle devoid of any mirth or warmth. After a time which seems an eternity, the shadow of feet recede. There is no noise. An absolute stillness permeates the house.</p>
+          <p>I yell "who's there!?". A booming deep laughter echoes down the hall. A laughter devoid of any mirth or warmth. After a time which seems an eternity, the shadow of feet recede. There is no noise. An absolute stillness permeates the house.</p>
           <p>"My parents!", i think in horror. Will he go for them? I slowly make my way to my parents room. A knock on the door produces no response. I decide to...</p>
           <button class="button" id="parentsroomS1btn1">Enter their room.</button>
           <button class="button" id="parentsroomS1btn2">Enter my Dad's office (He's strictly forbidden me to enter). </button>
@@ -95,6 +126,21 @@
         <!-- <sub>Loved ones remaining who believe in you: <span class="healthDisplay"></span></sub> -->
       </div>
       <div id="officeS1" class="room">
+        <pre>
+            ,--^----------,--------,-----,-------^--,
+            | |||||||||   `--------'     |          O
+            `+---------------------------^----------|
+              `\_,-------, _________________________|
+                / XXXXXX /`|     /
+               / XXXXXX /  `\   /
+              / XXXXXX /\______(
+             / XXXXXX /
+            / XXXXXX /
+           (________(
+            `------'                
+            
+            
+        </pre>
         <p>I quietly make my way to my Dad's office and am suprised. The door isn't locked. I turn the handle very slowly so it makes no noise. The only sound is a slight creak from the wooden floorboards. I enter the office searching for the handgun I know is here but have been strictly forbidden from touching.</p>
         <p>After moments of searching, I finally find my prize in the top drawer of the desk. My dad has few rules but this one is absolute. Do I take the weapon?</p>
         <button class="button" id="officeS1btn1">I will not take it.</button>
