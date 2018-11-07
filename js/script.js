@@ -46,7 +46,7 @@ function stopItsComing() {
 }
 */
 
-=======
+
 
 $(document).ready(function () {
   $("#room0").slideDown();
@@ -93,7 +93,7 @@ $(document).ready(function () {
     $("#room3-damage").slideDown();
     $(".healthDisplay").text(healthCounter);
   });
-  
+
   $("#room3toRoom4-damage").click(function() {
     $(".room").hide();
     $("#room4-damage").slideDown();
