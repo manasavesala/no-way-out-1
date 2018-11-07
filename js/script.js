@@ -39,6 +39,19 @@ function laugh() {
   laugh.play();
 }
 
+function tearing() {
+  var tearing = document.getElementById("tearing");
+  tearing.play();
+}
+function bells() {
+  var bells = document.getElementById("bells");
+  bells.play();
+}
+function horror() {
+  var horror = document.getElementById("horror");
+  horror.play();
+}
+
 $(document).ready(function () {
   $("#room0").slideDown();
   $("#room0toRoom1").click(function() {
@@ -116,6 +129,7 @@ $(document).ready(function () {
   $("#officeS1btn1").click(function() {
     $(".room").hide();
     $("#officeGameOver").slideDown();
+    bells();
     $(".healthDisplay").text(healthCounter);
   });
 
@@ -133,6 +147,7 @@ $(document).ready(function () {
 
   $("#officeS2btn2").click(function() {
     $(".room").hide();
+    tearing();
     $("#officeS3").slideDown();
     $(".healthDisplay").text(healthCounter);
   });
@@ -183,6 +198,7 @@ $(document).ready(function () {
   $("#basementS1btn2").click(function() {
     $(".room").hide();
     $("#basementGameOver").slideDown();
+    horror();
     $(".healthDisplay").text(healthCounter);
   });
   $("#atticS2btn1").click(function() {
