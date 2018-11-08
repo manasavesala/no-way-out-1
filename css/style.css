@@ -29,6 +29,7 @@ pre {
   margin-right: 10%;
   font-size: 14px;
   overflow: hidden;
+  font-size: 20px;
 }
 
 h1 {
@@ -72,4 +73,32 @@ sub {
 
 #window {
   font-size: 20px;
+}
+
+#gun {
+  font-size: 20px;
+  margin: -20px
+}
+
+#girl {
+  font-size: 20px;
+  margin: -20px;
+}
+
+#room0 {
+  background-image: url("../img/lightning.gif");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#finger {
+font-size: 3px;
+}
+
+.complete{
+  color: blue;
+}
+
+.subtext{
+
 }

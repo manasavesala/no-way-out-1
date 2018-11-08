@@ -51,8 +51,23 @@ function horror() {
   var horror = document.getElementById("horror");
   horror.play();
 }
+function decapatation() {
+  var decapatation = document.getElementById("decapatation");
+  decapatation.play();
+}
+
+function glass() {
+  var glass = document.getElementById("glass");
+  glass.play();
+}
+
+function breathing() {
+  var breathing = document.getElementById("breathing");
+  breathing.play();
+}
 
 $(document).ready(function () {
+  lightning();
   $("#room0").slideDown();
   $("#room0toRoom1").click(function() {
     $(".room").hide();
@@ -127,14 +142,15 @@ $(document).ready(function () {
   });
 
   $("#officeS1btn1").click(function() {
+    bells();
     $(".room").hide();
     $("#officeGameOver").slideDown();
-    bells();
     $(".healthDisplay").text(healthCounter);
   });
 
   $("#officeS1btn2").click(function() {
     $(".room").hide();
+    glass();
     $("#officeS2").slideDown();
     $(".healthDisplay").text(healthCounter);
   });
@@ -143,6 +159,7 @@ $(document).ready(function () {
     $(".room").hide();
     $("#gameOver").slideDown();
     $(".healthDisplay").text(healthCounter);
+    decapatation();
   });
 
   $("#officeS2btn2").click(function() {
@@ -178,16 +195,19 @@ $(document).ready(function () {
     $(".room").hide();
     $("#atticS1").slideDown();
     $(".healthDisplay").text(healthCounter);
+    breathing();
   });
   $("#atticS1btn1").click(function() {
     $(".room").hide();
     $("#atticS2").slideDown();
     $(".healthDisplay").text(healthCounter);
+    lightning();
   });
   $("#atticS1btn2").click(function() {
     $(".room").hide();
     $("#basementS1").slideDown();
     $(".healthDisplay").text(healthCounter);
+    doorOpen();
   });
 
   $("#basementS1btn1").click(function() {

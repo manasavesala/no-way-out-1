@@ -17,6 +17,8 @@
   <audio src="sounds/tearing.mp3" id="tearing"></audio>
   <audio src="sounds/bells.mp3" id="bells"></audio>
   <audio src="sounds/horror.mp3" id="horror"></audio>
+  <audio src="sounds/decapatation.mp3" id="decapatation"></audio>
+  <audio src="sounds/glass.mp3" id="glass"></audio>
 
   <title>Horror Game</title>
   </head>
@@ -28,31 +30,29 @@
           <source type="audio/mpeg" src="sounds/intro.mp3">
         </audio>
         <pre id="house">
-
-
-            *         .              *            _.---._
-                          ___   .            ___.'       '.   *
-    .              _____[LLL]______________[LLL]_____     \
-                  /     [LLL]              [LLL]     \     |
-                  /____________________________________\    |    .
-                  )==================================(    /
-  .      *         '|I .-. I .-. I .--. I .-. I .-. I|'  .'
-              *    |I |+| I |+| I |. | I |+| I |+| I|-'`       *
-                    |I_|+|_I_|+|_I_|__|_I_|+|_I_|+|_I|      .
-          .       /_I_____I_____I______I_____I_____I_\
-                    )================================(   *
-    *         _     |I .-. I .-. I .--. I .-. I .-. I|          *
-            |u|  __|I |+| I |+| I |>| I |+| I |+| I|    _         .
-        __   |u|_|uu|I |+| I |+| I |~ | I |+| I |+| I| _ |U|     _
-    .  |uu|__|u|u|u,|I_|+|_I_|+|_I_|__|_I_|+|_I_|+|_I||n|| |____|u|
-      |uu|uu|_,.-' /I_____I_____I______I_____I_____I\`'-. |uu u|u|__
-      |uu.-'`      #############(______)#############    `'-. u|u|uu|
-      _.'`              ~"^"~   (________)   ~"^"^~           `'-.|uu|
-  ,''          .'    _                             _ `'-.        `'-.
+           *         .              *            _.---._
+                         ___   .            ___.'        '.   *
+    .              _____[LLL]______________[LLL]_____      \
+                 /     [LLL]              [LLL]      \      |
+                /____________________________________ \     |    .
+                  )================================(       /
+  .      *       '|I .-. I .-. I .--. I .-. I .-. I|'   .'
+             *    |I |+| I |+| I |. | I |+| I |+| I|- '`       *
+                  |I_|+|_I_|+|_I_|__|_I_|+|_I_|+|_I|      .
+         .       /_I_____I_____I______I_____I_____I_\
+                  )================================(   *
+  *        _      |I .-. I .-. I .--. I .-. I .-. I|          *
+          |u|  __ |I |+| I |+| I |[]| I |+| I |+| I|    _         .
+     __   |u|_|uu||I |+| I |+| I |~ | I |+| I |+| I| _ |U|     _
+  . |uu|__|u|u|u,||I_|+|_I_|+|_I_|__|_I_|+|_I_|+|_I||n|| |____|u|
+    |uu|uu|_,.-' /I_____I_____I______I_____I_____I\`'- |uu u|u| |__
+    |uu.-'`      #############(______)#############    `'-. u |u|uu|
+    |_.'`              ~"^"~   (________)   ~"^"^~           `'-.|uu|
+,''          .'    _                             _ `'-.        `'-.
 
     </pre>
-        <p>"Hell is empty and all the devils are here"</p>
-        <p> - The Tempest</p>
+        <p class="subtext">"Hell is empty and all the devils are here"</p>
+        <p class="subtext"> - The Tempest</p>
         <h1>No Way Out</h1>
         <button class="button" id="room0toRoom1">Enter Game</button>
       </div>
@@ -212,7 +212,7 @@
         <!-- <sub>Loved ones remaining who believe in you: <span class="healthDisplay"></span></sub> -->
       </div>
       <div id="officeS1" class="room">
-        <pre>
+        <pre id="gun">
             ,--^----------,--------,-----,-------^--,
             | |||||||||   `--------'     |          O
             `+---------------------------^----------|
@@ -236,7 +236,7 @@
     </div>
 
     <div id="officeS2" class="room">
-      <p>I reach for the gun and in my blind haste, a glass that was near the edge of the desk it was in falls to the floor, shattering with a resounding crash. I hear the creature  quicked his pace, I only have seconds to decide if I should...</p>
+      <p>I reach for the gun and in my blind haste, a glass that was near the edge of the desk it was in falls to the floor, shattering with a resounding crash. I hear the creature  quicken his pace, I only have seconds to decide if I should...</p>
       <button class="button" id="officeS2btn1">Quickly Hide in the Attic</button>
       <button class="button" id="officeS2btn2">Stand and Fight</button>
       <br>
@@ -258,7 +258,7 @@
     </div>
 
     <div id="basementS1" class="room">
-      <p>You decide youd rather take your chances with the creature and climb down into the hallway. The damn floor creaks and you hear the creature who is searching your room stop and snarl. You rush down and jump the last few steps onto the first floor. The front has been blocked off, clearly this thing wants you badly. You look around and see a door on the side of the hall. It leads to basement. With no other choice you swing it open, heaad inside and close it behind you as it reaches the first floor. It violently beats on the door trying to get inside. You head down, cursing whoever invented stairs. There is a window in the corner and a boiler with enough space to hide behind, you look at the gun you are holding and...</p>
+      <p>You decide youd rather take your chances with the creature and climb down into the hallway. The damn floor creaks and you hear the creature who is searching your room stop and snarl. You rush down and jump the last few steps onto the first floor. The front has been blocked off, clearly this thing wants you badly. You look around and see a door on the side of the hall. It leads to basement. With no other choice you swing it open, head inside and close it behind you as it reaches the first floor. It violently beats on the door trying to get inside. You head down, cursing whoever invented stairs. There is a window in the corner and a boiler with enough space to hide behind, you look at the gun you are holding and...</p>
       <button class="button" id="basementS1btn1">Open the window and make your escape.</button>
       <button class="button" id="basementS1btn2">Hide behind the boiler and set up and ambush.</button>
       <br>
@@ -300,7 +300,7 @@
     </div>
 
     <div id="basementGameOver" class="room">
-      <pre>
+      <pre id="finger">
           MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
           MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
           MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
@@ -412,18 +412,18 @@
       <p>You hear the door crash, clearly this thing has monstrous strength. With No time to Escape, you hide behind the boiler. It slowly makes its way down, with steps far heavier than what it humanoid shape should emmit. You take a chance and peak at it, darkness cloaking it. Suddenly it grabs the support beam to the stairs and you recoil back in horror as you see a grimmy and clawed hand. It sniffs the air as if trying to smell you out. You hold your breath as it makes its way to the boiler. You get you get your gun ready as is turn the corner. You take a shot and somehow miss. Fortunately the bullet rebounds and it seems to hit the thing as it shrieks in pain. You make a run for it, but it grabs your clothing and won't let go. Blindly, you take several more shots and hear a howl of pain as you free yourself. You take the stairs two at a time, and with one final look back, you see its collapsed form dissolve into a black mist. You Head out the back door and figure all the noise you made attracted attention, as red and blue lights near your home. You feel something on your back and reach for it. Stunned with horror, you feel its dismembered finger wriggling in your closed fist.</p>
 
 
-    <p>You have completed the journey with <sub>resilience</sub></p>
+    <p>You have completed the journey with <span class="complete">Resilience</span></p>
     <button class="button" id="basementGameOverbtn1">Restart the journey</button>  
 
     <!-- <button>restart</button> -->   <!-- <sub>Loved ones remaining who believe in you: <span class="healthDisplay"></span></sub> -->
     </div>
 
     <div id="officeGameOver" class="room">
-      <pre>
+      <pre id="girl">
           ,,,,,                    
           ////""\               .  
-         (((/ m m              -|-                        __
-         )))c  = )              |                        (__)
+         (((/    \             -|-                        __
+         )))c    )              |                        (__)
         ////-./~`    .                                    []
        (((( `.`\    ::                                    []
         )))`\ \)).-;.'                           .------, []
