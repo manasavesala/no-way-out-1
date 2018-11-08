@@ -102,3 +102,12 @@ font-size: 3px;
 .subtext{
 
 }
+
+#door {
+  font-size: 30px;
+}
+
+#demonText {
+  font-size: 25px;
+  margin: 40px
+}

@@ -19,6 +19,10 @@
   <audio src="sounds/horror.mp3" id="horror"></audio>
   <audio src="sounds/decapatation.mp3" id="decapatation"></audio>
   <audio src="sounds/glass.mp3" id="glass"></audio>
+  <audio src="sounds/gun.mp3" id="gun"></audio>
+  <audio src="sounds/breathing.mp3" id="breathing"></audio>
+  <audio src="sounds/sniff.mp3" id="sniff"></audio>
+  <audio src="sounds/siren.mp3" id="siren"></audio>
 
   <title>Horror Game</title>
   </head>
@@ -107,15 +111,15 @@
           MMMMMMMMMys`                       -dMMNMMMMMMMMNM
 
         </pre>
-        <p>His face looked like a man's. An older man in his 40s. Plain. Ordinary. I knew him though. I knew the creature that hid behind the mask of a man. And I knew why he was standing in the cold rain, staring in the direction of my window.</p>
-        <p>I began to tremble knowing what I had to do...</p>
-        <button class="button" id="bedroomS1btn1">I move closer to the window.</button>
-        <button class="button" id="bedroomS1btn2">I lie down in bed and close my eyes.</button>
+        <p>His face looked like a man's. An older man in his 40s. Plain. Ordinary. You know him though. You know the creature that hides behind the mask of a man. And you know why he stands in the cold rain, staring in the direction of your window.</p>
+        <p>You begin to tremble knowing what you have to do...</p>
+        <button class="button" id="bedroomS1btn1">Move closer to the window.</button>
+        <button class="button" id="bedroomS1btn2">Lock the bedroom door and go back to bed.</button>
         <br>
         <sub>*** Your in game choices are critical and will determine if you live or die. Choose wisely. ***</sub>
         <br>
         <br>
-        <!-- <sub>Loved ones remaining who believe in you: <span class="healthDisplay"></span></sub> -->
+        
       </div>
 
       <div id="bedroomS2" class="room">
@@ -137,11 +141,11 @@
               !!!!           !!!!
 
           </pre>
-        <p>I move closer to the window. For a moment, I think I see him there. But A cold emptiness stands where I thought 'he' was. The street is deserted. Wet concrete shining indifferently. A shiver goes through me as I turn from the window. It's then that I see it. Just below the sliver of space between my bedroom door and the floor a barely visible shadow standing perfectly still. Inhumanly still.</p>
-        <p>I decide to ...</p>
+        <p>You move closer to the window. For a moment, you think you see him there. But A cold emptiness stands where you thought 'he' was. The street is deserted. Wet concrete shining indifferently. A shiver goes through you as you turn from the window. It's then that you see it. Just below the sliver of space between your bedroom door and the floor a barely visible shadow standing perfectly still. Inhumanly still.</p>
+      
         <button class="button" id="bedroomS2btn2">Yell "who's there!?" </button>
         <br>
-        <!-- <sub>Loved ones remaining who believe in you: <span class="healthDisplay"></span></sub> -->
+        
       </div>
 
       <div id="bedroomS3" class="room">
@@ -186,33 +190,88 @@
 
 
           </pre>
-          <p>I lie in bed with the covers pulled tight to my chin. I know he's still outside though. I know I lacked the courage to meet his gaze. A part of me has died.</p>
+          <p>You lie in bed with the covers pulled tight to your chin. You know he's still outside though. You know you lacked the courage to meet his gaze. A part of you has died.</p>
           <sub>You have lost a loved one who believed in you.</sub>
           <br>
           <button class="button" id="bedroomS3btn1">Proceed</button>
           <br>
-          <!-- <sub>Loved ones remaining who believe in you: <span class="healthDisplay"></span></sub> -->
+          
       </div>
 
       <div id="parentsroomS1" class="room">
-          <p>I yell "who's there!?". A booming deep laughter echoes down the hall. A laughter devoid of any mirth or warmth. After a time which seems an eternity, the shadow of feet recede. There is no noise. An absolute stillness permeates the house.</p>
-          <p>"My parents!", i think in horror. Will he go for them? I slowly make my way to my parents room. A knock on the door produces no response. I decide to...</p>
-          <button class="button" id="parentsroomS1btn1">Enter their room.</button>
-          <button class="button" id="parentsroomS1btn2">Enter my Dad's office (He's strictly forbidden me to enter). </button>
+
+        <pre id="door">
+             __________
+            |  __  __  |
+            | |  ||  | |
+            | |  ||  | |
+            | |__||__| |
+            |  __  __()|
+            | |  ||  | |
+            | |  ||  | |
+            | |  ||  | |
+            | |  ||  | |
+            | |__||__| |
+            |__________|
+ 
+        </pre>
+          <p>You yell "who's there!?". A booming deep laughter echoes down the hall. A laughter devoid of any mirth or warmth. After a time which seems an eternity, the shadow of feet recede. There is no noise. An absolute stillness permeates the house.</p>
+          <p>"My parents!", You think in horror. Will he go for them? You slowly make your way to your parents room. A knock on the door produces no response. You decide to...</p>
+          <button class="button" id="parentsroomS1btn1">Enter their room (what if they're doing private things...).</button>
+          <button class="button" id="parentsroomS1btn2">Enter your Dad's office (he's strictly forbidden you to enter). </button>
           <br>
-          <!-- <sub>Loved ones remaining who believe in you: <span class="healthDisplay"></span></sub> -->
+          
       </div>
       <div id="parentsroomS2" class="room">
-        <p>An empty cold looking bed is the only thing I see when I enter my parents bedroom. Wouldn't they have told me if they left for the night? My fear increases with the knowledge of being commpletely alone.</p>
-        <p>My mind scrambles trying to think of where they could have possibly gone. I fear that the figure has done something horrible to them.</p>
-        <p>At this point I realize that I must find a weapon to protect myself. My dad has strictly forbidden me from grabbing his gun, but it is tne only option, unless I choose to be unarmed...</p>
-        <button class="button" id="parentsroomS2btn1">Choose to continue unarmed.</button>
-        <button class="button" id="parentsroomS2btn2">Enter my Dad's office (He's strictly forbidden me to enter). </button>
-        <br>
-        <!-- <sub>Loved ones remaining who believe in you: <span class="healthDisplay"></span></sub> -->
+        <pre id="bed">
+
+
+
+     .::""-,                      .::""-.
+     /::     \                    /::     \
+     |::     |   _..--""""--.._   |::     |
+     '\:.__ /  .'              '.  \:.__ /
+      ||____|.'                  '.||____|
+      ||:.  |                       |:.  |
+      ||:.  |                       |:.  |
+      ||:.  |                       |:.  |
+      ||:.  |  _..---"````````'---. |:.  |
+      ||:.  | `                     \:.  |
+      ||:.  |: :                .--._.-""-;
+      ||:.  |: : _.---``````---/    '.   _.`.
+      ||:.  | .-'  _,'```'-...'   _ .-'.'    '-.
+      ||:. .-'   .'        '. . '      '.      `'.
+      ||: ;.' .`'        _. '`'-.         '.   . ''-._
+      ||:. :   '.     .'          '.  . ' ' '.`       '._
+      ||:. :    '. .'     .::""-: .''.        ' .   . ' ' :::""-.
+      ||:. '     ..' .    /::     \    '.        . '.    /::     \
+      ||:  :  . .'      '.|::     |    _.:---""---.._'   |::     |
+      ||.  ;  .:          '\:.__ /   .'              '.   \:.__ /
+      ||:  ;  : '.       . ||____|_.'                  '._||____|
+      ||:  ;__:   '.   .'  ||:.  |                        ||:.  |
+      ||:___| \     '. :   ||:.  |                        ||:.  |
+      [[____]  '.     '.-._||:.  |                        ||:.  |
+                 '.    :   ||:.  |                        ||:.  |
+                   '.  :   ||:.  |                        ||:.  |
+                     '-:   ||:.  |                        ||:.  |
+                        '._||:.  |________________________||:.  |
+                           ||:___|'-.-'-.-'-.-'-.-'-.-'-.-||:___|
+                           [[____]                        [[____]
+ 
+          </pre>
+          <p>An empty cold looking bed is the only thing you see when you enter your parents bedroom. Wouldn't they have told you if they left for the night? Your fear increases with the knowledge of being commpletely alone.</p>
+          <p>Your mind scrambles trying to think of where they could have possibly gone. You fear that the figure has done something horrible to them.</p>
+          <p>At this point you realize that you must find a weapon to protect yourself. Your dad has strictly forbidden you from grabbing his gun, but it is the only option, unless you choose to be unarmed...</p>
+
+          <button class="button" id="parentsroomS2btn1">You don't need a gun; You are strong.</button>
+          <button class="button" id="parentsroomS2btn2">Enter your Dad's office (He's strictly forbidden you to enter). </button>
+          <br>
+          
+        
       </div>
       <div id="officeS1" class="room">
         <pre id="gun">
+          <br>
             ,--^----------,--------,-----,-------^--,
             | |||||||||   `--------'     |          O
             `+---------------------------^----------|
@@ -227,42 +286,79 @@
 
 
         </pre>
-        <p>I quietly make my way to my Dad's office and am suprised. The door isn't locked. I turn the handle very slowly so it makes no noise. The only sound is a slight creak from the wooden floorboards. I enter the office searching for the handgun I know is here but have been strictly forbidden from touching.</p>
-        <p>After moments of searching, I finally find my prize in the top drawer of the desk. My dad has few rules but this one is absolute. Do I take the weapon?</p>
-        <button class="button" id="officeS1btn1">I will not take it.</button>
-        <button class="button" id="officeS1btn2">I will take it.</button>
+        <p>You quietly make your way to your Dad's office and are suprised. The door isn't locked. You turn the handle very slowly so it makes no noise. The only sound is a slight creak from the wooden floorboards. You enter the office searching for the handgun you know is here but have been strictly forbidden from touching.</p>
+        <p>After moments of searching, you finally find your prize in the top drawer of the desk. Your dad has few rules but this one is absolute. Do you take the weapon?</p>
+        <button class="button" id="officeS1btn1">A gun isn't necesary; you know karate.</button>
+        <button class="button" id="officeS1btn2">You will take it.</button>
         <br>
-        <!-- <sub>Loved ones remaining who believe in you: <span class="healthDisplay"></span></sub> -->
+        
     </div>
 
     <div id="officeS2" class="room">
-      <p>I reach for the gun and in my blind haste, a glass that was near the edge of the desk it was in falls to the floor, shattering with a resounding crash. I hear the creature  quicken his pace, I only have seconds to decide if I should...</p>
-      <button class="button" id="officeS2btn1">Quickly Hide in the Attic</button>
-      <button class="button" id="officeS2btn2">Stand and Fight</button>
-      <br>
-      <!-- <sub>Loved ones remaining who believe in you: <span class="healthDisplay"></span></sub> -->
+      <p>You reach for the gun and grab it. In your haste it goes off. The bang is deafening. You hear the creature quicken its pace, you only have seconds to decide if you should...</p>
+      <button class="button" id="officeS2btn1">Retreat to the attic.</button>
+      <button class="button" id="officeS2btn2">Hold your ground.</button>
     </div>
 
     <div id="atticS1" class="room">
-      <p>"Screw this" you say to yourself as you take the gun and rush out of the office. You quickly head to the hallway and look up at a dandling string that opens the door to the attic. Whatever that thing is, its getting closer by the moment. You quickly open the trapdoor, climb inside and barely close the door behind you in time. You peek down into the hallway and see a shadow of whatever mock shape a man that thing is. It takes a raspy breath as it maes its way to your bedroom. You look around and see a small window in the attic. You are afraid of heights but the only other option is to sneak out the front door and risk running into that monstrous thing. You make your way to... </p>
+      <img src="img/creature.gif">
+      <p>"Screw this" you say to yourself as you take the gun and rush out of the office. You quickly head to the hallway and look up at a dandling string that opens the door to the attic. Whatever that thing is, its getting closer by the moment. You see his slow, deliberate walk. You quickly open the trapdoor, climb inside and barely close the door behind you in time. You make your way to... </p>
       <button class="button" id="atticS1btn1">The Attic Window and Try and Climb Out</button>
       <button class="button" id="atticS1btn2">Sneak out the front door.</button>
       <br>
-      <!-- <sub>Loved ones remaining who believe in you: <span class="healthDisplay"></span></sub> -->
+      
     </div>
 
     <div id="atticS2" class="room">
-      <p>You pry the window open and as you do, the thunder roars in approval. You take a deep breath and carefully make your way onto the slick roof. The rain is pouring hard as you crawl to the edge. Unfortunately, your father never did get around to fixing those shingles your moms been nagging him about. As you plunge over the edge and into the darkness, you reflect on the poor choices that led you here.</p>
+      <pre id="falling">
+
+          mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmoydmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm:  :mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm. .mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm:  hmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmms  hmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmdydmmmmmmd  ymmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmd  .mmmmmms  +mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmd` -mmmmmm/  :mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm- `dmmmm+   `mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmh  ommmm`   `mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm- smmmmm-   ommmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm/  dmmmmm:  .mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmms   ommmmm`  `mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm.  -dmmmmd    smmmmmmmmmsodmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm/  ymmmmmh    +mmmmmmhyy``-mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          mmmmmmmmmmmmmmmmmmmmmmmmmmmdhmmmmmmmmmm+  /mmmmm/    -mmmmmmmo   ommmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          mmmmmmmmmmmmmmmmmmmmmmmmmmms`odommmmmmm+   +dmmd`    -mmmmmmmm``smmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          mmmmmmmmmmmmmmmmmmmmmmmmmmmms:` :mmmmmmo    `/hs     .mmmmmmmh `mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmd. +mmmmmy             .mmmmmmm-  mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmd` -hmmmm.            /mmmmmm+   mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmh` `ommd-            +ddmmmm-  .mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmh`  ymm-               .smm.  :mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmh:``omdo               ``.   smmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmy` -y+                  -+ymmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmy`                   .hmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmo                 `ommmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmd:             `+dmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmy:`     `/shhmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmhho+smmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+
+      </pre>
+      <p>You pry the window open and as you do, the thunder roars. You take a deep breath and carefully make your way onto the slick roof. The rain is pouring hard as you crawl to the edge. Unfortunately, you lose your balance and you slip off the house. As you plunge over the edge and into the dark abyss, you reflect on the poor choices that led you here.</p>
     <p>You Died - Game Over</p>
-    <button class="button" id="atticS2btn1">Restart the journey</button>   <!-- <sub>Loved ones remaining who believe in you: <span class="healthDisplay"></span></sub> -->
+    <button class="button" id="atticS2btn1">Restart the journey</button>   
     </div>
 
     <div id="basementS1" class="room">
-      <p>You decide youd rather take your chances with the creature and climb down into the hallway. The damn floor creaks and you hear the creature who is searching your room stop and snarl. You rush down and jump the last few steps onto the first floor. The front has been blocked off, clearly this thing wants you badly. You look around and see a door on the side of the hall. It leads to basement. With no other choice you swing it open, head inside and close it behind you as it reaches the first floor. It violently beats on the door trying to get inside. You head down, cursing whoever invented stairs. There is a window in the corner and a boiler with enough space to hide behind, you look at the gun you are holding and...</p>
+        <img src="img/creature.gif">
+      <p>You decide you'd rather take your chances with the creature and climb down into the hallway. The floor creaks and you hear the creature who is searching your room stop and snarl. You rush down onto the first floor. The front has been blocked off. You look around and see a door on the side of the hall. It leads to basement. With no other choice you swing it open, head inside and close it behind you as it reaches the first floor. It violently beats on the door trying to get inside. You head down, cursing whoever invented stairs. There is a window in the corner and a boiler with enough space to hide behind, you look at the gun you are holding and...</p>
       <button class="button" id="basementS1btn1">Open the window and make your escape.</button>
-      <button class="button" id="basementS1btn2">Hide behind the boiler and set up and ambush.</button>
+      <button class="button" id="basementS1btn2">Hide behind the boiler and set up an ambush.</button>
       <br>
-      <!-- <sub>Loved ones remaining who believe in you: <span class="healthDisplay"></span></sub> -->
+      
     </div>
 
     <div id="basementEnding" class="room">
@@ -292,11 +388,11 @@
                                                                                                          
                                                                                        
       </pre>
-      <p>You toss the gun aside, there's no way in hell you're sticking around to find out what is stalking in your house. You hear the basement door start to crack as you reach the window. The damn thing is stuck after years of disuse. With a earthshattering crash it makes its way into the basement just as the window pops open with on final heave. You jump up and crawl outside into the rain. You turn around and see red eyes glaring at you frown the darkness. Quickly you run faster than you ever had before, you need to get far away. After several minutes of running on the road you see a car driving towards you. You scream for help and it thankfully pulls over. "Thanks" you exclaim and you throw yourself in and close the door. You hear a click as the locks activate. "You're welcome <span>Name</span>" a familiar raspy voice replies. You slowly turn around, a bloody smile spreading accross its face. It steps on the gas pedal and the last thing you hear is its cackling laugh, echoing through the Night</p>
+      <p>You toss the gun aside, and exit through the nearest window. You jump up and crawl outside into the rain. You turn around and see red eyes glaring at you frown the darkness of the basement. You run faster than you ever had before, you need to get far away. After several minutes of running on the road you see a car driving towards you. You scream for help and it thankfully pulls over. "Thanks" you exclaim and you throw yourself in and close the door without even glancing at the driver. You hear a click as the locks activate. You slowly turn your head, and you're met by a familiar shape and red eyes in the driver's seat..</p>
     <p>You Died - Game Over</p>
     <button class="button" id="basementEndingbtn1">Restart the journey</button>
 
-    <!-- <button>restart</button> -->   <!-- <sub>Loved ones remaining who believe in you: <span class="healthDisplay"></span></sub> -->
+    
     </div>
 
     <div id="basementGameOver" class="room">
@@ -409,13 +505,13 @@
           MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
           
       </pre>
-      <p>You hear the door crash, clearly this thing has monstrous strength. With No time to Escape, you hide behind the boiler. It slowly makes its way down, with steps far heavier than what it humanoid shape should emmit. You take a chance and peak at it, darkness cloaking it. Suddenly it grabs the support beam to the stairs and you recoil back in horror as you see a grimmy and clawed hand. It sniffs the air as if trying to smell you out. You hold your breath as it makes its way to the boiler. You get you get your gun ready as is turn the corner. You take a shot and somehow miss. Fortunately the bullet rebounds and it seems to hit the thing as it shrieks in pain. You make a run for it, but it grabs your clothing and won't let go. Blindly, you take several more shots and hear a howl of pain as you free yourself. You take the stairs two at a time, and with one final look back, you see its collapsed form dissolve into a black mist. You Head out the back door and figure all the noise you made attracted attention, as red and blue lights near your home. You feel something on your back and reach for it. Stunned with horror, you feel its dismembered finger wriggling in your closed fist.</p>
+      <p>You enter the basement and hide behind the boiler. It slowly makes its way down, with steps far heavier than what it's humanoid shape should produce. You take a chance and peak at it, darkness cloaking it. It sniffs the air trying to hunt you down. You take a shot and make a run for it, but it violently grabs you. You take several more shots and hear a howl of pain as you free yourself. You see its collapsed form dissolve into a black mist. You make your way out and minutes later are surrounded by red and blue flashing lights. You feel something on your back and reach for it. Stunned with horror, you feel its dismembered finger wriggling on your back...</p>
 
 
-    <p>You have completed the journey with <span class="complete">Resilience</span></p>
+    <p>You have found a way out.</p>
     <button class="button" id="basementGameOverbtn1">Restart the journey</button>  
 
-    <!-- <button>restart</button> -->   <!-- <sub>Loved ones remaining who believe in you: <span class="healthDisplay"></span></sub> -->
+  
     </div>
 
     <div id="officeGameOver" class="room">
@@ -437,13 +533,21 @@
     `'              (__)                                 (__)
  
       </pre>
-      <p>I decide to not grab the gun out of fear of my dad's reprisal. I retreat to my bedroom to pray. My prayers are never answered. Instead, the fear in me continues and grows. I spend what seems like an eternity in the prayer position by my bed. I know I have let down the people who believed in me . The people who were counting on me to protect them. But the worst of all, I have failed myself. </p>
+      <p>You decide to not grab the gun out of fear of my dad's reprisal. You retreat to my bedroom to pray. My prayers are never answered. Instead, the fear in me continues and grows. You spend what seems like an eternity in the prayer position by my bed. You have let down the people who believed in you. The people who were counting on you to protect them. But the worst of all, you have failed yourself. </p>
       <button class="button" id="officeGameOverbtn1">Your soul withers and dies. Restart?</button>
       <br>
-      <!-- <sub>Loved ones remaining who believe in you: <span class="healthDisplay"></span></sub> -->
+      
     </div>
 
     <div id="officeS3" class="room">
+
+      <pre id="demonText">
+
+
+
+
+          Ỵ̸͍͉͖̪͔̹̟̭͙̜̖̩̮́̊̀̈́̽̈́͒̈̔̈́͛̑̑̑͜͝ơ̸̞͎͍̙̱͙͙͈̭̯̠͖͕̏̅̐̀̈̄͌u̵͔͍̫͔̖̣̥͓̣͙͌́̽͗̑̏͐̄̐͝͝r̶̨̢̘̪̦̙̪̜͉̹̟͖̺̂̽͋͛͋̆̀̐͗͑̈́̐̈́ͅ ̸̨̡̹̪͔̹͎̜̖̱̞̺̱̪͑̌͘p̷̟̝̞̿̓̏̍̈́̆͌̉͜â̴̧̤̤͔̲̪̬͌̒̆r̸̭̳̟̭̖̓͠e̷̦̥̬̬̗̪̘̫͑́͒ṋ̴̯͇͎͓̮̜̜̙͍͓̑͒́́̍̿̄̃̕͜ţ̶͍̣͔͙̹̬͙̥̜̝̹̗͒̏́̐̾̃̈́̒̓̊̕̕͜͝ͅş̴̜̰͚̩̰̞̮̣͚̮͔̙̩̩̓̍̀̇̉̊͆̈ ̵͖͗̀̈a̴̝̲͘͘͘ṟ̵̣̪̲̖̠̠̜͇̬͉̝̊͜e̸̹̞̪̾̎̈́̌̃̑̐̂̊͋͂̂̋̚ ̷̲̱̳̹͓̻̹͔́̉̐̓̏̓͝d̵̲̞̜̤͉͓̲͇̯̏͌̈́͑̐̃͜ͅë̷̻̭̤̩͋̽̕͜͝ã̷̠͌̊͂̏̐̚͘d̵̛̛̜̭͆̈́̈̇̇̉̆͌̑̕ ̶̛̜̺̪̰͕͍͎͓̓̆͊̉͑͗̂͗̈́̚a̵̡͓̹̗̅̒͑͊͜n̵̗͉̳̖̥̮̮̏̈́̔̎͛͂̾̃̎́ḑ̶̨̛̻͚̯̻̫̖̣̲͕̤̮̫͋͂̈̐̈́̒͋͝ ̷̼͎͍̆̈́̀t̸̞̳̞̥̘̳͑͝h̸̢̨̡̩̩̖̳͎̱͈͈̤̩͒̀̓̇̿̈́̍̈́̌̚e̸̡͔̠͙̙̹̥̻̼̳̘̯̒̒͊̾ͅĩ̵̢̳̤̲̺͇̲̲̘̺̮͓̼̥̾̒̃̓̅͝͠ͅṟ̶̗͔̖͉̀̆̊̂͐̉ ̸̡̨̼̗̙͈͙͈̺̫̰̳̈́̎̐̓f̶̥̹̿̑̚ļ̵̢̡͈̫̞͕͎̙̯̹͍̳̟̦̿̈͑̍͒̆̇̉̑͋͠é̷̘̹͔̫̭̠̹̪̦́̎̅ͅs̷̡̝̱̮͙͔̟̘̦̯̣̼͙̣̀h̶̖̪̼̹͖̪̬̋͌̇̌͒̉͗̀̎̚͘ͅ ̴̛̛̣͔̳̙̮̗̦̦̯̮̜̣̗̮͔̒̒͗͗̓̓ŗ̴̢̹̭̲̩̳̇͊͐́͋͊̋̽͊͠͝e̸̤̳͐̓͌̑̌̓͆͘s̵̞͉͙̗̈́͋̃̌̾̈͆̈̌͘̚͘̕͠͝t̷̢̞̖̩̫̓́́̏͛s̵̢͍̭̥̩̜̲̖͈͎͉̰͓͗̈̔ ̸̱̰̘̞̒̅̎͆̌͊͗̓̈́́̚i̸̼̙̖̥̤̽̐̈̌͗̊̔̂̔̕͝͠n̴̢̛͎̭̙͕̲̿̈́̾͊͗̂͘̕͝ ̴̧͍̹̤̝̬̰͓͖̱̭͍͚͈͛́̈́͆̈̽͂̚m̸͕̫̖̠̣͇̤̪͕͚̱̞͑͊̓̀͠ͅy̸̧̛̛̖̖̺̙̆̈́̄̅̋̇̈͌̇̕̕ ̴̢͓̯͎̭̦̫͓͕̩̓͊̉̀̏̀̓́̈́͠ḅ̸̟̳͎̞̯͉̏͛̅͒̎͌̚o̶̦̤͎̻̥͉̩̟̖̣̥̿w̸̝͉̘̫͈̖̙͍͕͚͒̑͠ḛ̷͂͊̏͂̈̿̓̐̆̒́͋̓͘̚͜ͅl̶͔̩̮̙͍̜̭̪̳̩͚̿̒͌͛̄́̋͐͋̊̀͜s̵̻̜̙̮̐̆̀̈̂̋͆̎̕͠.̶͓̯̻̻̗͇̜̂̿̄̇̋͛͗͘
+      </pre>
       <p>You stand your ground. It’s face is finally in full view. Gnarled, burned flesh in a rough outline of a mocking smile. For a moment life seems to stand still. It speaks. The words feel ancient. Earthly. Like the bowls of hell are speaking directly through the flesh its pupetteering.</p>
       <p>“Your parents are dead. Their flesh rests in my bowels.”</p>
       <p>You see the fresh blood stains on his mouth and know he speaks the truth. “I can bring them back.” It states with a flat confidence.</p>
@@ -453,7 +557,7 @@
       <button class="button" id="officeS3btn2">Shoot the creature.</button>
 
       <br>
-      <!-- <sub>Loved ones remaining who believe in you: <span class="healthDisplay"></span></sub> -->
+      
     </div>
 
     <div id="officeS4" class="room">
@@ -522,80 +626,72 @@
         <button class="button" id="officeS4btn1">Restart the journey.</button>
 
         <br>
-        <!-- <sub>Loved ones remaining who believe in you: <span class="healthDisplay"></span></sub> -->
+        
     </div>
 
     <div id="officeS5" class="room">
-
-        <p>You point the gun directly at the center of the monstrosity and pull the trigger. Nothing happens . It looks at you as if you were a stumbling puppy who tried to bite his master. Darkness fills your vision. </p>
-        <p>“I tried mom and dad “, is your last thought as unconsciousness takes you.</p>
-      </p>You were brave in the end at least. Congratulations</p>
-
-
-      <pre id="family"> 
+        <pre id="family"> 
              
- ..........--.--.....-.-...---.--......---.------------------------------:--:------------------------
- ........--------...-----------.---------.----:-::-::::------------::--:::::::::::::--:::::-:::------
- .-------:-::::::----:::::::::::::---..````...---.--:::--::-::::::::////:::::::/:://:/:::::::::::::::
- ......----------.--:-----:-::-:::-.`  ``````.---...`.---:-::::::://////::://:-/:://:/::::::://::::/:
- ``................................` `` `..`.-...```  `..----..-.------...------..----------------.--
- ...........................-----.``.:/+so//oo++:-..```.---------------------------------------------
- .`...................--.---------` .+shdddmmmmmdhyo//:.::::::::::::::::-::::-::---------------------
- ``........................--..-/+:`/ossssshmmmmmmdhs:.--::---::::::-------:------..--..............-
- ..............-.....-----------/s+:+ydysooohmyoosyy+..-----:::::::::-----:--.-::-------.......-.....
- :::::-::-:::::::::::::::::::://:ss:oydmmdhyhdyyssys:......--:://////////////::///::::::::::::/::::::
- :::::::::::::/:::////////////++//:/oshdhysydhhmmdho--::--:://///+++/////////////////////://///::////
- ::::--::::::::::::::::::://////:-:/syhyyysoysyhdhs:/oyhhhhhsoo++o+++::::-::::::::::--::------------:
- -----:::-:::::::::::::::::::/::-::/sydyyhdhysyhhs-:shdmmmmmmmhssoooo/-:-----------------------------
- ------:-----------------:::::::--:/+shhddddhyhhs:.:sddmmmmmNNmdsoo+++/------------------------------
- .....-.--------------------+:::::+s+++shdmdhhyo--`:oyyyhmmmhyyhy+++//+:-------.---------------------
- ....-.....-.............../Nmds/+yyys++++++++:..-`+so+osymdhs+sh+//::o+---.........------...----....
- ........................--hNMm+++/odhhyyyyso/-`-:`+hdddhymdmmmNmh+///so:.............--......-......
- ```.................--//++shdooo+yNNmmhdhhsoo-.o+`/ydmdssdhhhdmmdo+++y+/-.........--....----------..
- ```````.`.........-::osdmdyhddy/sNNNNmoy+ss+s--ys`-oyhssosyhhyhhhoo+oyo/......................--.-..
- `````.........:+oyso:.-/+o+----++yhNm+::+y-yo--hy. +ydyssyhhhdddyooooys/........................-.`.
- ````````....:shhhhssyyysyyhs+oohmmmms+hdmds:`.:hh/``/sshddmdddhsoooo+ss/-...........................
- ``````````-+yohNmNNdNNNmddNNNmddNMMMdddNNmms:`:hdo.  `-://++oo//ssso/oo+--.......................``.
- ----------/+..:+/o++ymdho++hyhsooshyy//+hoy//.:yhs/--.-/oshddhsyyyso//+/----..-.....................
- ..-----.---`..+++o.-`/so+..:soo---+oo/-./:/:-/ooo+//:--:+ydddyyyhhs+///-..------------.-------------
- .....``.+`/:+sdddd/../++so//syyy+++yyh+/+s++oooo+//:..--+oyhyyhyhyo+///-.------..---.--..-----------
- ...``.`:+/soshNNMmdhys+oNNydhNMMNdddNNdyso+//+++///:-.-:+//ossyooo+//+/:+osyso:..............-......
- `..`....:oy+/hdhmhddNMNhNMhddmMNNdhyddh+++////++osyyhyyys:::++o/////++//ssssyys/....................
- ...........``++/+..-oMNNs/...-o+o+.-.-.:///::/odmNNNNNmmh+-://:::::/++:+ssssssss:.........--....----
- ```````:+.. -o+/:`../oyys:..--oooo.```.:+:/::+dmmNNNNmmmds.:/:--:::/+/+oosoossss+.-.......-.........
- ```````:/++:dNNNmy++///-.:oooodmmmyo/:///----oysyhmmhyhhhy-.++:.-::/:/+ooooosssso:....`.............
- ``````.-/yo/NNNNmdhNmdy:.ohhdhNNNNho/:/:--..-yddddmmdhhhhh:./+/..-::::+o+ooooosss+.....``...........
- ...----./o::hhhdyssNNmmh+syyysddhds::/::-..`/dmmdhdddNNmds--/+/--:///////ooooossso------------------
- ....---.`-`-o+oo-.-+yyys.:-.-./+++.`-+//:..`oddhyssyhmmmh+--/++//++++++:/+oooososo:--...............
- `.---...`.`+o+o+.`.-:..-.:.`..++//..-//o/:--ydh++osooydhs..-:+++++++++/-:/++ooosss/.........```...``
- `.....``/+:mNNNmyyso.`.:hdysyymmmd+:/:://o/-/ydddhhhhmhs-.---+o++++oo++:./sydmmmmd+.................
- ......`.o+/NMNNmhdhds+/hmNdyhhNNmh+:/---/oo+-./syhhhyss-.-.-:+o//++ooo++-+hmNNNmmdo.................
- ........+-:yhhdysyydhosyyho+++hho+:-/:-.:/++:.:////+sys---:::+o///++++++:.sdmNNmmds...-..----..-----
- ````.```. :o+o+-...//o--::....+:.-.-//:---+/--+sssyhdhs/-:///oo////+++++:`+dmNNmmdy-.--..-......----
- ````.`````+o+o+++/++-:-:++----/--:::++/:..-:-+shdddmddy/.-/::/s/:///+++/:`:ydmmmmdy-.............---
- ```````./+NmNNhyyo+/-/sdmNhyyso:---.o/:-.`...ohdmmmmmms-`....-o+--://+++:``odmmmmdh:................
- ```````./ydhsoo+-..-sddmNNdyy/-..``.+:...`.`.-ymmmmmy//`...`.-oy/----/++:``+hmmmmdh:```````````````.
- ````````-`.:++++++ydhdNNho//:...---/:```.`.-``:smmm/``-``.:../+yo-----:/:``:ydmmmdh/````````````````
- ``````` `` `-+ydNNdhhho//-...`.-://-.---:`.++``-/ys``..``.--:/:/s--.-.-/-.`-ydmmmdh/````````````````
- ``````` `..--+dmNNNh+-..-:s/:-//:..-::+s/``:o-``.--........///+/o.....--.`-sdmmmddy:````````````````
- `````````./ss/:ohs/:/:..+yh/+/:..`.-.:.+-..`--....`:-......+++o+/.`....--ohmmmmdhy+.````````````````
- ````````` `.sh/```-:-/sdhs--.-sho-.`.-.:...`.-....-o-...---/+sos..`...:sddmmmdhyo/-.................
- ```````````..-::.``-ommho:-`.sdomm/:hhyhyss+-/+.........-:/:oos-...-+ydmmmddhyo:-.-.--...-.....`....
- ````   ./:+hyy:-:/osss/:/::oddyo+//+ooysooyhyhsss++:---../yyyy:.-/sdmmmdddhs+:......................
-  ````  ./:+sss-:-/.--  ..-yNNmms`--+o+o:.+hmhhddmmddhyhyso++sdmhmmmmddhhyo:.````````````````````````
-  ```````.`--..```/--.....+yhdmh/..hdyys:hmmmmmmmdhhddhsyddmmmNmmmmdhys+-.````````......`````````````
- ``````` ` ....`` /--.-/:../+sy..-/hdmmddmmmmmddmdysyddhyhdmddmmmmmmdo-`.`````..................````.
-    
-      </pre>
-        <p>I point the gun directly at the center of the monstrosity and pull the trigger. Nothing happens . It looks it me as a stumbling puppy who tried to bite his master. Darkness fills my vision. </p>
-        <p>“I tried mom and dad “, is my last thought as unconsciousness takes me.</p>
-        </p>You completed the story with <sub>courage</sub>.</p>
-          
-
+            ..........--.--.....-.-...---.--......---.------------------------------:--:------------------------
+            ........--------...-----------.---------.----:-::-::::------------::--:::::::::::::--:::::-:::------
+            .-------:-::::::----:::::::::::::---..````...---.--:::--::-::::::::////:::::::/:://:/:::::::::::::::
+            ......----------.--:-----:-::-:::-.`  ``````.---...`.---:-::::::://////::://:-/:://:/::::::://::::/:
+            ``................................` `` `..`.-...```  `..----..-.------...------..----------------.--
+            ...........................-----.``.:/+so//oo++:-..```.---------------------------------------------
+            .`...................--.---------` .+shdddmmmmmdhyo//:.::::::::::::::::-::::-::---------------------
+            ``........................--..-/+:`/ossssshmmmmmmdhs:.--::---::::::-------:------..--..............-
+            ..............-.....-----------/s+:+ydysooohmyoosyy+..-----:::::::::-----:--.-::-------.......-.....
+            :::::-::-:::::::::::::::::::://:ss:oydmmdhyhdyyssys:......--:://////////////::///::::::::::::/::::::
+            :::::::::::::/:::////////////++//:/oshdhysydhhmmdho--::--:://///+++/////////////////////://///::////
+            ::::--::::::::::::::::::://////:-:/syhyyysoysyhdhs:/oyhhhhhsoo++o+++::::-::::::::::--::------------:
+            -----:::-:::::::::::::::::::/::-::/sydyyhdhysyhhs-:shdmmmmmmmhssoooo/-:-----------------------------
+            ------:-----------------:::::::--:/+shhddddhyhhs:.:sddmmmmmNNmdsoo+++/------------------------------
+            .....-.--------------------+:::::+s+++shdmdhhyo--`:oyyyhmmmhyyhy+++//+:-------.---------------------
+            ....-.....-.............../Nmds/+yyys++++++++:..-`+so+osymdhs+sh+//::o+---.........------...----....
+            ........................--hNMm+++/odhhyyyyso/-`-:`+hdddhymdmmmNmh+///so:.............--......-......
+            ```.................--//++shdooo+yNNmmhdhhsoo-.o+`/ydmdssdhhhdmmdo+++y+/-.........--....----------..
+            ```````.`.........-::osdmdyhddy/sNNNNmoy+ss+s--ys`-oyhssosyhhyhhhoo+oyo/......................--.-..
+            `````.........:+oyso:.-/+o+----++yhNm+::+y-yo--hy. +ydyssyhhhdddyooooys/........................-.`.
+            ````````....:shhhhssyyysyyhs+oohmmmms+hdmds:`.:hh/``/sshddmdddhsoooo+ss/-...........................
+            ``````````-+yohNmNNdNNNmddNNNmddNMMMdddNNmms:`:hdo.  `-://++oo//ssso/oo+--.......................``.
+            ----------/+..:+/o++ymdho++hyhsooshyy//+hoy//.:yhs/--.-/oshddhsyyyso//+/----..-.....................
+            ..-----.---`..+++o.-`/so+..:soo---+oo/-./:/:-/ooo+//:--:+ydddyyyhhs+///-..------------.-------------
+            .....``.+`/:+sdddd/../++so//syyy+++yyh+/+s++oooo+//:..--+oyhyyhyhyo+///-.------..---.--..-----------
+            ...``.`:+/soshNNMmdhys+oNNydhNMMNdddNNdyso+//+++///:-.-:+//ossyooo+//+/:+osyso:..............-......
+            `..`....:oy+/hdhmhddNMNhNMhddmMNNdhyddh+++////++osyyhyyys:::++o/////++//ssssyys/....................
+            ...........``++/+..-oMNNs/...-o+o+.-.-.:///::/odmNNNNNmmh+-://:::::/++:+ssssssss:.........--....----
+            ```````:+.. -o+/:`../oyys:..--oooo.```.:+:/::+dmmNNNNmmmds.:/:--:::/+/+oosoossss+.-.......-.........
+            ```````:/++:dNNNmy++///-.:oooodmmmyo/:///----oysyhmmhyhhhy-.++:.-::/:/+ooooosssso:....`.............
+            ``````.-/yo/NNNNmdhNmdy:.ohhdhNNNNho/:/:--..-yddddmmdhhhhh:./+/..-::::+o+ooooosss+.....``...........
+            ...----./o::hhhdyssNNmmh+syyysddhds::/::-..`/dmmdhdddNNmds--/+/--:///////ooooossso------------------
+            ....---.`-`-o+oo-.-+yyys.:-.-./+++.`-+//:..`oddhyssyhmmmh+--/++//++++++:/+oooososo:--...............
+            `.---...`.`+o+o+.`.-:..-.:.`..++//..-//o/:--ydh++osooydhs..-:+++++++++/-:/++ooosss/.........```...``
+            `.....``/+:mNNNmyyso.`.:hdysyymmmd+:/:://o/-/ydddhhhhmhs-.---+o++++oo++:./sydmmmmd+.................
+            ......`.o+/NMNNmhdhds+/hmNdyhhNNmh+:/---/oo+-./syhhhyss-.-.-:+o//++ooo++-+hmNNNmmdo.................
+            ........+-:yhhdysyydhosyyho+++hho+:-/:-.:/++:.:////+sys---:::+o///++++++:.sdmNNmmds...-..----..-----
+            ````.```. :o+o+-...//o--::....+:.-.-//:---+/--+sssyhdhs/-:///oo////+++++:`+dmNNmmdy-.--..-......----
+            ````.`````+o+o+++/++-:-:++----/--:::++/:..-:-+shdddmddy/.-/::/s/:///+++/:`:ydmmmmdy-.............---
+            ```````./+NmNNhyyo+/-/sdmNhyyso:---.o/:-.`...ohdmmmmmms-`....-o+--://+++:``odmmmmdh:................
+            ```````./ydhsoo+-..-sddmNNdyy/-..``.+:...`.`.-ymmmmmy//`...`.-oy/----/++:``+hmmmmdh:```````````````.
+            ````````-`.:++++++ydhdNNho//:...---/:```.`.-``:smmm/``-``.:../+yo-----:/:``:ydmmmdh/````````````````
+            ``````` `` `-+ydNNdhhho//-...`.-://-.---:`.++``-/ys``..``.--:/:/s--.-.-/-.`-ydmmmdh/````````````````
+            ``````` `..--+dmNNNh+-..-:s/:-//:..-::+s/``:o-``.--........///+/o.....--.`-sdmmmddy:````````````````
+            `````````./ss/:ohs/:/:..+yh/+/:..`.-.:.+-..`--....`:-......+++o+/.`....--ohmmmmdhy+.````````````````
+            ````````` `.sh/```-:-/sdhs--.-sho-.`.-.:...`.-....-o-...---/+sos..`...:sddmmmdhyo/-.................
+            ```````````..-::.``-ommho:-`.sdomm/:hhyhyss+-/+.........-:/:oos-...-+ydmmmddhyo:-.-.--...-.....`....
+            ````   ./:+hyy:-:/osss/:/::oddyo+//+ooysooyhyhsss++:---../yyyy:.-/sdmmmdddhs+:......................
+             ````  ./:+sss-:-/.--  ..-yNNmms`--+o+o:.+hmhhddmmddhyhyso++sdmhmmmmddhhyo:.````````````````````````
+             ```````.`--..```/--.....+yhdmh/..hdyys:hmmmmmmmdhhddhsyddmmmNmmmmdhys+-.````````......`````````````
+            ``````` ` ....`` /--.-/:../+sy..-/hdmmddmmmmmddmdysyddhyhdmddmmmmmmdo-`.`````..................````.
+               
+                 </pre>
+        <p>You point the gun directly at the center of the monstrosity and pull the trigger. Nothing happens . It looks at you as if you were a stumbling puppy who tried to bite his master. Darkness fills your vision. </p>
+        <p>“I tried mom and dad“, is your last thought as unconsciousness takes you.</p>
+         </p>You completed the journey with courage.</p>
         <button class="button" id="officeS5btn1">Restart the journey.</button>
 
         <br>
-        <!-- <sub>Loved ones remaining who believe in you: <span class="healthDisplay"></span></sub> -->
+        
     </div>
 
     </div>
