@@ -1,6 +1,6 @@
 # _N0 Way Out_
 
-http://maxdhs.github.io/pizza-shop
+http://maxdhs.github.io/no-way-out
 
 #### A base text Horror Story.
 
@@ -26,7 +26,6 @@ _Text based horror adventure where while at home, your peaceful night turns into
 
 ## Known Bugs
 * Possible Typos
-* Soundtrack does not play upon load.
 * Some ASCII images may not be oriented properly relative to the background.
 
 ## Technologies Used
