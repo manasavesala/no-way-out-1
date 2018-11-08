@@ -1,10 +1,10 @@
 # _N0 Way Out_
 
-http://maxdhs.github.io/no-way-out
+http://maxdhs.github.io/no-way-out/
 
 #### A base text Horror Story.
 
-#### By **Maxwell Dubin, Glen Sale, Manasa Vesala, Daniel Lira**
+#### By **Maxwell Dubin, Glen Sale, Manasa Vesala, Cristian Lucero, Daniel Lira**
 
 ## Description
 
@@ -38,16 +38,16 @@ _Text based horror adventure where while at home, your peaceful night turns into
 
 ## Support and contact details
 
-#Contact
-_Maxwell Dubin - maxdhs@gmail.com._
-_Manasa Vesala - vesalamanasa@gmail.com_
-_Daniel Lira - devidra87@gmail.com_
-_Glen Sale - glen_sale@yahoo.com_
-_Cristian Lucero - cristianjlucero32@gmail.com_
+# Contact
+* _Maxwell Dubin - maxdhs@gmail.com._
+* _Manasa Vesala - vesalamanasa@gmail.com_
+* _Daniel Lira - devidra87@gmail.com_
+* _Glen Sale - glen_sale@yahoo.com_
+* _Cristian Lucero - cristianjlucero32@gmail.com_
 
 
 ### License
 
-*{This software is licensed under the MIT license}*
+*This software is licensed under the MIT license*
 
 Copyright (c) 2018 **_Maxwell Dubin_**
