@@ -1,4 +1,4 @@
-# _N0 Way Out_
+# _No Way Out_
 
 http://maxdhs.github.io/no-way-out/
 
